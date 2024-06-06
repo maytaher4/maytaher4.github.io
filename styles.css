@@ -1,200 +1,329 @@
+/* Algemene stijl voor de gehele website */
 body {
+    /* Gebruik het lettertype Arial voor de gehele website */
     font-family: Arial, sans-serif;
+    /* Verwijder standaard marges */
     margin: 0;
+    /* Verwijder standaard padding */
     padding: 0;
+    /* Zorg ervoor dat padding en border bij de totale breedte/hoogte worden opgeteld */
     box-sizing: border-box;
 }
 
+/* Container stijl voor centrale uitlijning en padding */
 .container {
+    /* Breedte van de container */
     width: 90%;
+    /* Centreer de container */
     margin: 0 auto;
 }
 
+/* Stijlen voor de header sectie */
 header {
+    /* Achtergrondkleur van de header */
     background-color: #e116c3;
+    /* Tekstkleur in de header */
     color: #fff;
+    /* Padding boven en onder de header */
     padding: 10px 0;
 }
 
+/* Stijlen voor het logo in de header */
 header .logo {
+    /* Lettergrootte van het logo */
     font-size: 24px;
+    /* Maak het logo vetgedrukt */
     font-weight: bold;
 }
 
+/* Stijlen voor de navigatielijst in de header */
 header nav ul {
+    /* Verwijder standaard lijststijl */
     list-style: none;
+    /* Verwijder padding */
     padding: 0;
+    /* Verwijder marges */
     margin: 0;
+    /* Gebruik flexbox voor de lijst */
     display: flex;
+    /* Plaats de lijst aan het einde van de container */
     justify-content: flex-end;
 }
 
+/* Stijlen voor de lijstitems in de navigatie */
 header nav ul li {
+    /* Voeg marge toe aan de linkerkant van elk lijstitem */
     margin-left: 20px;
 }
 
+/* Stijlen voor de navigatielinks */
 header nav ul li a {
+    /* Kleur van de links */
     color: #fff;
+    /* Verwijder onderstreping van de links */
     text-decoration: none;
+    /* Maak de links vetgedrukt */
     font-weight: bold;
 }
 
+/* Stijlen voor de footer sectie */
 footer {
+    /* Achtergrondkleur van de footer */
     background-color: #e116c3;
+    /* Tekstkleur in de footer */
     color: #fff;
+    /* Centreer de tekst in de footer */
     text-align: center;
+    /* Padding boven en onder de footer */
     padding: 10px 0;
 }
 
+/* Stijlen voor de hero sectie */
 .hero {
+    /* Gebruik flexbox voor de hero sectie */
     display: flex;
+    /* Verticaal centreren van de items */
     align-items: center;
+    /* Padding boven en onder de hero sectie */
     padding: 50px 0;
+    /* Achtergrondkleur van de hero sectie */
     background-color: #f4f4f4;
 }
 
+/* Stijlen voor de tekst in de hero sectie */
 .hero-text {
+    /* Flex-item voor de tekst */
     flex: 1;
+    /* Tekst links uitlijnen */
     text-align: left;
 }
 
+/* Stijlen voor de hoofdtitel in de hero sectie */
 .hero-text h1 {
+    /* Lettergrootte van de hoofdtitel */
     font-size: 48px;
+    /* Marge onder de hoofdtitel */
     margin-bottom: 20px;
 }
 
+/* Stijlen voor de ondertitel in de hero sectie */
 .hero-text p {
+    /* Lettergrootte van de ondertitel */
     font-size: 20px;
+    /* Marge onder de ondertitel */
     margin-bottom: 20px;
 }
 
+/* Stijlen voor de afbeelding in de hero sectie */
 .hero-image {
+    /* Flex-item voor de afbeelding */
     flex: 1;
+    /* Afbeelding rechts uitlijnen */
     text-align: right;
 }
 
+/* Stijlen voor de afbeelding zelf in de hero sectie */
 .hero-image img {
+    /* Maximaal de volledige breedte gebruiken */
     max-width: 100%;
+    /* Zorg ervoor dat de hoogte automatisch is */
     height: auto;
 }
 
+/* Stijlen voor de producten sectie */
 .products {
+    /* Padding boven en onder de producten sectie */
     padding: 50px 0;
+    /* Centreer de tekst in de producten sectie */
     text-align: center;
 }
 
+/* Stijlen voor de individuele productkaarten */
 .product-card {
+    /* Gebruik inline-block om de kaarten naast elkaar te plaatsen */
     display: inline-block;
+    /* Breedte van de kaarten */
     width: 30%;
+    /* Marge tussen de kaarten */
     margin: 0 1.5%;
+    /* Achtergrondkleur van de kaarten */
     background-color: #fff;
+    /* Padding binnen de kaarten */
     padding: 20px;
+    /* Schaduw voor de kaarten */
     box-shadow: 0 0 10px rgba(219, 6, 191, 0.1);
+    /* Zorg ervoor dat de knop altijd onderaan de kaart staat */
     position: relative;
 }
 
+/* Stijlen voor de productafbeeldingen in de kaarten */
 .product-card img {
+    /* Maximaal de volledige breedte gebruiken */
     max-width: 100%;
+    /* Zorg ervoor dat de hoogte automatisch is */
     height: auto;
 }
 
+/* Stijlen voor de productnamen in de kaarten */
 .product-card h3 {
+    /* Marge boven en onder de productnamen */
     margin: 10px 0;
 }
 
+/* Stijlen voor de kleurkeuze opties */
 .color-options {
+    /* Marge boven en onder de kleurkeuze opties */
     margin: 15px 0;
 }
 
+/* Stijlen voor de labels van de kleurkeuze opties */
 .color-options label {
+    /* Marge rechts van de labels */
     margin-right: 10px;
 }
 
+/* Stijlen voor de knop om het product aan de winkelwagen toe te voegen */
 .add-to-cart {
+    /* Achtergrondkleur van de knop */
     background-color: #e116c3;
+    /* Tekstkleur van de knop */
     color: #fff;
+    /* Verwijder de standaard rand van de knop */
     border: none;
+    /* Padding binnen de knop */
     padding: 10px 20px;
+    /* Zorg ervoor dat de cursor een pointer wordt */
     cursor: pointer;
+    /* Positioneer de knop absoluut */
     position: absolute;
+    /* Plaats de knop onderaan de kaart */
     bottom: 20px;
+    /* Centreer de knop horizontaal */
     left: 50%;
+    /* Zorg ervoor dat de knop correct gecentreerd wordt */
     transform: translateX(-50%);
 }
 
+/* Hover effect voor de knop */
 .add-to-cart:hover {
+    /* Verander de achtergrondkleur bij hover */
     background-color: #633957;
 }
 
+/* Stijlen voor de contact sectie */
 .contact {
+    /* Padding boven en onder de contact sectie */
     padding: 50px 0;
+    /* Centreer de tekst in de contact sectie */
     text-align: center;
 }
 
+/* Stijlen voor het contactformulier */
 .contact form {
+    /* Maximaal breedte van het formulier */
     max-width: 600px;
+    /* Centreer het formulier */
     margin: 0 auto;
+    /* Gebruik flexbox voor het formulier */
     display: flex;
+    /* Plaats de elementen verticaal */
     flex-direction: column;
 }
 
+/* Stijlen voor de labels in het formulier */
 .contact form label {
+    /* Marge boven de labels */
     margin-top: 10px;
+    /* Tekst links uitlijnen */
     text-align: left;
 }
 
+/* Stijlen voor de invoervelden en textarea in het formulier */
 .contact form input,
 .contact form textarea {
+    /* Breedte van de invoervelden en textarea */
     width: 100%;
+    /* Padding binnen de invoervelden en textarea */
     padding: 10px;
+    /* Marge boven de invoervelden en textarea */
     margin-top: 5px;
+    /* Rand van de invoervelden en textarea */
     border: 1px solid #ccc;
+    /* Ronde hoeken voor de invoervelden en textarea */
     border-radius: 5px;
 }
 
+/* Stijlen voor de knop in het formulier */
 .contact form button {
+    /* Achtergrondkleur van de knop */
     background-color: #61345e;
+    /* Tekstkleur van de knop */
     color: #fff;
+    /* Verwijder de standaard rand van de knop */
     border: none;
+    /* Padding binnen de knop */
     padding: 10px 20px;
+    /* Zorg ervoor dat de cursor een pointer wordt */
     cursor: pointer;
+    /* Marge boven de knop */
     margin-top: 20px;
 }
 
+/* Hover effect voor de knop in het formulier */
 .contact form button:hover {
+    /* Verander de achtergrondkleur bij hover */
     background-color: #555;
 }
 
+/* Stijlen voor de winkelwagen sectie */
 .cart {
+    /* Padding boven en onder de winkelwagen sectie */
     padding: 50px 0;
+    /* Centreer de tekst in de winkelwagen sectie */
     text-align: center;
 }
 
+/* Stijlen voor de tekst in de winkelwagen sectie */
 .cart p {
+    /* Lettergrootte van de tekst */
     font-size: 18px;
 }
 
+/* Responsieve stijlen voor kleinere schermen */
 @media (max-width: 768px) {
+    /* Flex-direction voor de navigatiebar in de header */
     header nav ul {
+        /* Plaats de navigatielijst verticaal */
         flex-direction: column;
+        /* Centreer de navigatielijst */
         align-items: center;
     }
 
+    /* Stijlen voor de lijstitems in de navigatie op kleinere schermen */
     header nav ul li {
+        /* Voeg marge boven en onder de lijstitems toe */
         margin: 10px 0;
     }
 
+    /* Flex-direction voor de hero sectie op kleinere schermen */
     .hero {
+        /* Plaats de items in de hero sectie verticaal */
         flex-direction: column;
+        /* Centreer de tekst in de hero sectie */
         text-align: center;
     }
 
+    /* Stijlen voor de tekst in de hero sectie op kleinere schermen */
     .hero-text {
+        /* Centreer de tekst */
         text-align: center;
     }
 
+    /* Stijlen voor de productkaarten op kleinere schermen */
     .product-card {
+        /* Gebruik de volledige breedte voor de kaarten */
         width: 100%;
+        /* Voeg marge boven en onder de kaarten toe */
         margin: 20px 0;
     }
 }
